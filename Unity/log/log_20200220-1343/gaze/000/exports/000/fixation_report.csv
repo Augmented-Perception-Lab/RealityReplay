@@ -1,0 +1,6 @@
+fixation classifier,Dispersion_Duration
+max_dispersion,1.500 deg
+min_duration,80 ms
+max_duration,220 ms
+
+fixation_count,40

@@ -1,0 +1,141 @@
+{
+    "defaultId": "Masking",
+
+    "presetMetadata": [
+        {
+            "id": "Off",
+            "name": "Off",
+            "desc": "Disable everything."
+        },
+        {
+            "id": "Masking",
+            "name": "Masking",
+            "desc": "Default masking parameters."
+        },
+        {
+            "id": "GlobalDepth",
+            "name": "Forced Depth Test",
+            "desc": "Forced video depth testing."
+        },
+        {
+            "id": "Mixed",
+            "name": "Forced Depth + Masking",
+            "desc": "Forced video depth test with default masking."
+        }
+    ],
+
+    "resetState": {
+        "options": {
+            "forceGlobalViewOffset": true,
+            "frameSkip": 1,
+            "maskFormat": 4,
+            "maskingMode": 1,
+            "resDivider": 2,
+            "videoDepthTestMode": 0,
+            "videoDepthTestBehavior": 0,
+            "videoDepthTestRange": [ 0.0, 0.75 ],
+            "vrFrameSubmit": true,
+            "vrFrameSync": true,
+            "vrFrameUpdate": true,
+            "vrLayerSubmitColor": false,
+            "vrLayerSubmitDepth": true,
+            "vrLayerSubmitMask": true,
+            "vrRenderMask": true,
+            "vrViewOffset": 1.0,
+            "vstRendering": true
+        },
+        "planes": [
+            {
+                "color": [ 1.0, 0.1, 1.0, 1.0 ],
+                "enabled": false,
+                "position": [ 0.0, 1.0, -1.0 ],
+                "rotation": [ -45.0, 0.0, 0.0 ],
+                "scale": [ 0.5, 0.5 ],
+                "trackRelative": true,
+                "trackedId": 0,
+                "trackedPose": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ],
+                "tracking": false
+            },
+            {
+                "color": [ 1.0, 1.0, 0.1, 1.0 ],
+                "enabled": false,
+                "position": [ 0.0, 0.0, 0.0 ],
+                "rotation": [ 0.0, 0.0, 0.0 ],
+                "scale": [ 0.5, 0.5 ],
+                "trackRelative": true,
+                "trackedId": 0,
+                "trackedPose": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ],
+                "tracking": false
+            },
+            {
+                "color": [ 0.1, 1.0, 1.0, 1.0 ],
+                "enabled": false,
+                "position": [ 0.0, 0.0, 0.0 ],
+                "rotation": [ 0.0, 0.0, 0.0 ],
+                "scale": [ 0.5, 0.5 ],
+                "trackRelative": true,
+                "trackedId": 0,
+                "trackedPose": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ],
+                "tracking": false
+            },
+            {
+                "color": [ 0.1, 1.0, 0.1, 1.0 ],
+                "enabled": false,
+                "position": [ 0.0, 0.0, 0.0 ],
+                "rotation": [ 0.0, 0.0, 0.0 ],
+                "scale": [ 0.5, 0.5 ],
+                "trackRelative": true,
+                "trackedId": 0,
+                "trackedPose": [ 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0 ],
+                "tracking": false
+            }
+        ]
+    },
+
+    "presetStates": {
+        "Off": {
+            "options": {
+                "forceGlobalViewOffset": false,
+                "maskingMode": 0,
+                "videoDepthTestMode": 0,
+                "videoDepthTestBehavior": 0,
+                "videoDepthTestRange": [ 0.0, 0.75 ],
+                "vrFrameSubmit": false,
+                "vrFrameSync": false,
+                "vrFrameUpdate": false,
+                "vrLayerSubmitColor": false,
+                "vrLayerSubmitDepth": false,
+                "vrLayerSubmitMask": false,
+                "vrRenderMask": false,
+                "vstRendering": false
+            }
+        },
+        "Masking": {
+            "options": {
+            }
+        },
+        "GlobalDepth": {
+            "options": {
+                "forceGlobalViewOffset": true,
+                "maskingMode": 0,
+                "videoDepthTestMode": 3,
+                "videoDepthTestBehavior": 0,
+                "videoDepthTestRange": [ 0.0, 0.6 ],
+                "vrFrameSubmit": false,
+                "vrFrameSync": false,
+                "vrFrameUpdate": false,
+                "vrLayerSubmitColor": false,
+                "vrLayerSubmitDepth": false,
+                "vrLayerSubmitMask": false,
+                "vrRenderMask": false,
+                "vstRendering": true
+            }
+        },
+        "Mixed": {
+            "options": {
+                "videoDepthTestMode": 3,
+                "videoDepthTestRange": [ 0.0, 0.6 ]
+            }
+        }
+    }
+}

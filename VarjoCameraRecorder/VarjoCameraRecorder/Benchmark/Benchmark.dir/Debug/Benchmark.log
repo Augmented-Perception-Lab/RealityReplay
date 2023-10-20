@@ -1,0 +1,15 @@
+﻿  Building Custom Rule C:/Users/apl-vr/Desktop/varjo-sdk/examples/Benchmark/CMakeLists.txt
+  D3D11Renderer.cpp
+  D3D12Renderer.cpp
+  D3DShaders.cpp
+  GLRenderer.cpp
+  GazeTracking.cpp
+  Geometry.cpp
+  GeometryGenerator.cpp
+  IRenderer.cpp
+  OpenVRTracker.cpp
+  VRSHelper.cpp
+  main.cpp
+  Generating Code...
+libglew32d.lib(glew.obj) : warning LNK4099: PDB 'glew_s.pdb' was not found with 'libglew32d.lib(glew.obj)' or at 'C:\Users\apl-vr\Desktop\varjo-sdk\examples\build\bin\glew_s.pdb'; linking object as if no debug info
+  Benchmark.vcxproj -> C:\Users\apl-vr\Desktop\varjo-sdk\examples\build\bin\Benchmark.exe
