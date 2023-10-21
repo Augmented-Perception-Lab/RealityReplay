@@ -1,0 +1,5 @@
+key,value
+history_length,0.2
+onset_confidence_threshold,0.5
+offset_confidence_threshold,0.5
+blinks_exported,3

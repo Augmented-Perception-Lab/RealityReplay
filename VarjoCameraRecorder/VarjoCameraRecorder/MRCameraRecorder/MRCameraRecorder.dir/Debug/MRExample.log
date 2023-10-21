@@ -1,0 +1,26 @@
+﻿  Building Custom Rule C:/Users/apl-vr/Desktop/varjo-sdk/examples/MRExample/CMakeLists.txt
+  main.cpp
+  AppLogic.cpp
+  AppView.cpp
+  MRScene.cpp
+  CameraManager.cpp
+  D3D11MultiLayerView.cpp
+  D3D11Renderer.cpp
+  D3D11Shaders.cpp
+  DataStreamer.cpp
+  GfxContext.cpp
+  Globals.cpp
+  MultiLayerView.cpp
+  Renderer.cpp
+  Scene.cpp
+  SyncView.cpp
+  UI.cpp
+  Generating Code...
+  LINK : program database C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\MRCameraRecorder.pdb missing; performing full link
+ImGui.lib(imgui.obj) : warning LNK4099: PDB 'ImGui.pdb' was not found with 'ImGui.lib(imgui.obj)' or at 'C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\ImGui.pdb'; linking object as if no debug info
+ImGui.lib(imgui_draw.obj) : warning LNK4099: PDB 'ImGui.pdb' was not found with 'ImGui.lib(imgui_draw.obj)' or at 'C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\ImGui.pdb'; linking object as if no debug info
+ImGui.lib(imgui_tables.obj) : warning LNK4099: PDB 'ImGui.pdb' was not found with 'ImGui.lib(imgui_tables.obj)' or at 'C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\ImGui.pdb'; linking object as if no debug info
+ImGui.lib(imgui_widgets.obj) : warning LNK4099: PDB 'ImGui.pdb' was not found with 'ImGui.lib(imgui_widgets.obj)' or at 'C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\ImGui.pdb'; linking object as if no debug info
+ImGuiBackends.lib(imgui_impl_dx11.obj) : warning LNK4099: PDB 'ImGuiBackends.pdb' was not found with 'ImGuiBackends.lib(imgui_impl_dx11.obj)' or at 'C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\ImGuiBackends.pdb'; linking object as if no debug info
+ImGuiBackends.lib(imgui_impl_win32.obj) : warning LNK4099: PDB 'ImGuiBackends.pdb' was not found with 'ImGuiBackends.lib(imgui_impl_win32.obj)' or at 'C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\ImGuiBackends.pdb'; linking object as if no debug info
+  MRExample.vcxproj -> C:\Users\apl-vr\Desktop\VarjoCameraRecorder\bin\MRCameraRecorder.exe

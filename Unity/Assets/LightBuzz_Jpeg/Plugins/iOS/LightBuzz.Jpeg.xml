@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LightBuzz.Jpeg</name>
+    </assembly>
+    <members>
+        <member name="T:LightBuzz.Jpeg.JpegExtensions">
+            <summary>
+            Unity3D JPEG extensions.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegExtensions.EncodeToJPGFast(UnityEngine.Texture2D,System.Int32,LightBuzz.Jpeg.Flag)">
+            <summary>
+            Encodes raw bitmap data from the texture to JPEG.
+            </summary>
+            <param name="texture">Texture to get the raw bytes.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 100).</param>
+            <param name="flags">Custom flag for the internal LibJPEG-Turbo calls.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegExtensions.EncodeToJPGFast(UnityEngine.Texture2D,System.Single,LightBuzz.Jpeg.Flag)">
+            <summary>
+            Encodes raw bitmap data from the texture to JPEG.
+            </summary>
+            <param name="texture">Texture to get the raw bytes.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0.0 - 1.0).</param>
+            <param name="flags">Custom flag for the internal LibJPEG-Turbo calls.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegExtensions.EncodeToJPGFast(UnityEngine.Texture2D,System.Int32)">
+            <summary>
+            Encodes raw bitmap data from the texture to JPEG.
+            </summary>
+            <param name="texture">Texture to get the raw bytes.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 100).</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegExtensions.EncodeToJPGFast(UnityEngine.Texture2D,System.Single)">
+            <summary>
+            Encodes raw bitmap data from the texture to JPEG.
+            </summary>
+            <param name="texture">Texture to get the raw bytes.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0.0 - 1.0).</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegExtensions.EncodeToJPGFast(UnityEngine.Texture2D)">
+            <summary>
+            Encodes raw bitmap data from the texture to JPEG.
+            </summary>
+            <param name="texture">Texture to get the raw bytes.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegExtensions.ToPixelFormat(UnityEngine.TextureFormat)">
+            <summary>
+            Converts Unity's texture format to LightBuzz's pixel format.
+            </summary>
+            <param name="format"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LightBuzz.Jpeg.ColorSpace">
+            <summary>
+            The JPEG color space.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.ColorSpace.RGB">
+            <summary>
+            RGB color space.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.ColorSpace.YCbCr">
+            <summary>
+            YCbCr color space.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.ColorSpace.GRAY">
+            <summary>
+            Grayscale color space. 
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.ColorSpace.CMYK">
+            <summary>
+            CMYK color space.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.ColorSpace.YCCK">
+            <summary>
+            YCCK color space.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.Flag">
+            <summary>
+            Custom flags for the LibJPEG-Turbo native calls.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Flag.NONE">
+            <summary>
+            No flags are set.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Flag.BOTTOMUP">
+            <summary>
+            Determines that the uncompressed raw image is stored in bottom-up order.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Flag.FASTUPSAMPLE">
+            <summary>
+            Uses the fastest chrominance upsampling.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Flag.NOREALLOC">
+            <summary>
+            Disables buffer reallocation.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Flag.FASTDCT">
+            <summary>
+            Uses the fastest DCT/IDCT algorithm available in the underlying codec.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Flag.ACCURATEDCT">
+            <summary>
+            Uses the most accurate DCT/IDCT algorithm available in the underlying codec.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.JpegDecoder">
+            <summary>
+            A super-fast JPEG decoder.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.#ctor">
+            <summary>
+            Create a new instance of the <see cref="T:LightBuzz.Jpeg.JpegDecoder"/>.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.Finalize">
+            <summary>
+            Disposes the <see cref="T:LightBuzz.Jpeg.JpegDecoder"/> and deallocates the unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.Pad(System.Int32)">
+            <summary>
+            Pad the given width to the nearest 32-bit boundary.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.GetImageInfo(System.IntPtr,System.UInt64,LightBuzz.Jpeg.PixelFormat,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Retrieves the header information of the JPEG image without decompressing it.
+            </summary>
+            <param name="jpegBuffer">A pointer to the JPEG image buffer.</param>
+            <param name="jpegBufferSize">The size of the JPEG image in bytes.</param>
+            <param name="destinationFormat">The pixel format of the uncompressed image.</param>
+            <param name="width">The retrieved width of the JPEG image.</param>
+            <param name="height">The retrieved height of the JPEG image.</param>
+            <param name="stride">The retrieved stride of the JPEG image.</param>
+            <param name="bufferSize">The retrieved buffer size of the JPEG image.</param>
+            <param name="colorSpace">The retrieved color space of the JPEG image.</param>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.GetImageInfo(System.IntPtr,System.UInt64,LightBuzz.Jpeg.PixelFormat)">
+            <summary>
+            Retrieves the header information of the JPEG image without decompressing it.
+            </summary>
+            <param name="jpegBuffer">A pointer to the JPEG image buffer.</param>
+            <param name="jpegBufferSize">The size of the JPEG image in bytes.</param>
+            <param name="destinationFormat">The pixel format of the uncompressed image.</param>
+            <returns>An object that represents the header information of the image.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.Decode(System.Byte[],LightBuzz.Jpeg.PixelFormat,LightBuzz.Jpeg.Flag,System.Int32@,System.Int32@)">
+            <summary>
+            Decodes a JPEG image to a byte array.
+            </summary>
+            <param name="compressedData">The compressed JPEG buffer.</param>
+            <param name="destinationFormat">The pixel format of the destination image.</param>
+            <param name="flag">Native LibJPEG-Turbo flag.</param>
+            <param name="width">The width of image.</param>
+            <param name="height">The height of image.</param>
+            <returns>The raw pixel data of the specified format.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.Decode(System.Byte[])">
+            <summary>
+            Decodes a JPEG image to a byte array.
+            </summary>
+            <param name="compressedData">The compressed JPEG buffer.</param>
+            <returns>The raw pixel data of the specified format.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.Decode(System.Byte[],LightBuzz.Jpeg.PixelFormat,LightBuzz.Jpeg.Flag)">
+            <summary>
+            Decodes a JPEG image to a managed object.
+            </summary>
+            <param name="compressedData">The compressed JPEG buffer.</param>
+            <param name="destinationFormat">The pixel format of the destination image.</param>
+            <param name="flag">Native LibJPEG-Turbo flag.</param>
+            <returns>An object that contains the JPEG image information.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.Decode(System.Byte[],LightBuzz.Jpeg.PixelFormat,LightBuzz.Jpeg.Flag,System.Byte[]@,System.Boolean)">
+            <summary>
+            Decodes a JPEG image to a given byte array.
+            </summary>
+            <param name="compressedData">The compressed JPEG buffer.</param>
+            <param name="destinationFormat">The pixel format of the destination image.</param>
+            <param name="flag">Native LibJPEG-Turbo flag.</param>
+            <param name="buffer">The byte array to fill.</param>
+            <param name="autosize">Specifies whether the decoder should automatically resize the reusable buffer. Defaults to true.</param>
+            <returns>The size of the byte array.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegDecoder.Dispose">
+            <summary>
+            Deallocates the unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.JpegEncoder">
+            <summary>
+            A super-fast JPEG encoder.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.#ctor">
+            <summary>
+            Create a new instance of the <see cref="T:LightBuzz.Jpeg.JpegEncoder"/>.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Finalize">
+            <summary>
+            Disposes the <see cref="T:LightBuzz.Jpeg.JpegEncoder"/> and deallocates the unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Encode(System.Byte[],System.Int32,System.Int32,System.Int32,LightBuzz.Jpeg.PixelFormat,LightBuzz.Jpeg.Flag)">
+            <summary>
+            Encodes raw bitmap data to JPEG.
+            </summary>
+            <param name="bitmap">The uncompressed raw bitmap data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 100).</param>
+            <param name="pixelFormat">The pixel format of the raw image.</param>
+            <param name="flags">Custom flags for the internal LibJPEG-Turbo calls.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Encode(System.Byte[],System.Int32,System.Int32,System.Single,LightBuzz.Jpeg.PixelFormat,LightBuzz.Jpeg.Flag)">
+            <summary>
+            Encodes raw bitmap data to JPEG.
+            </summary>
+            <param name="bitmap">The uncompressed raw bitmap data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 1).</param>
+            <param name="pixelFormat">The pixel format of the raw image.</param>
+            <param name="flags">Custom flags for the internal LibJPEG-Turbo calls.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Encode(System.Byte[],System.Int32,System.Int32,System.Int32,LightBuzz.Jpeg.PixelFormat)">
+            <summary>
+            Encodes raw bitmap data to JPEG.
+            </summary>
+            <param name="bitmap">The uncompressed raw bitmap data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 100).</param>
+            <param name="pixelFormat">The pixel format of the raw image.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Encode(System.Byte[],System.Int32,System.Int32,System.Single,LightBuzz.Jpeg.PixelFormat)">
+            <summary>
+            Encodes raw bitmap data to JPEG.
+            </summary>
+            <param name="bitmap">The uncompressed raw bitmap data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 1).</param>
+            <param name="pixelFormat">The pixel format of the raw image.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Encode(System.Byte[],System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Encodes raw bitmap data to JPEG.
+            </summary>
+            <param name="bitmap">The uncompressed raw bitmap data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 100).</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Encode(System.Byte[],System.Int32,System.Int32,System.Single)">
+            <summary>
+            Encodes raw bitmap data to JPEG.
+            </summary>
+            <param name="bitmap">The uncompressed raw bitmap data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="quality">The encoding quality for the resulting JPEG image (0 - 1).</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Encode(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Encodes raw bitmap data to JPEG.
+            </summary>
+            <param name="bitmap">The uncompressed raw bitmap data.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <returns>The JPEG-encoded binary data. In case the encoding process fails, null is returned.</returns>
+        </member>
+        <member name="M:LightBuzz.Jpeg.JpegEncoder.Dispose">
+            <summary>
+            Deallocates the unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.JpegImage">
+            <summary>
+            Encapsulates a JPEG image managed object.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImage.Info">
+            <summary>
+            The header information of the image.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImage.PixelFormat">
+            <summary>
+            The pixel format of the image.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImage.Flag">
+            <summary>
+            LibJPEG-Turbo flag of the image.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImage.Data">
+            <summary>
+            The raw data of the image.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.JpegImageInfo">
+            <summary>
+            Represents the JPEG image header information.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImageInfo.Width">
+            <summary>
+            The width of the image.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImageInfo.Height">
+            <summary>
+            The height of the image.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImageInfo.Stride">
+            <summary>
+            The stride of the image.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImageInfo.BufferSize">
+            <summary>
+            The size of the image buffer.
+            </summary>
+        </member>
+        <member name="P:LightBuzz.Jpeg.JpegImageInfo.ColorSpace">
+            <summary>
+            The color space of the image.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.NamespaceDoc">
+            <summary>
+            LightBuzz JPEG: a super-fast JPEG Encoder/Decoder for Unity3D. Runs on any thread.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.NativeMethods">
+            <summary>
+            LibJPEG-Turbo native method calls.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.PixelFormat">
+            <summary>
+            The pixel format of an uncompressed raw bitmap.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.RGB">
+            <summary>
+            RGB.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.BGR">
+            <summary>
+            BGR.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.RGBX">
+            <summary>
+            RGBX.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.BGRX">
+            <summary>
+            BGRX.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.XBGR">
+            <summary>
+            XBGR.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.XRGB">
+            <summary>
+            XRGB.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.GRAY">
+            <summary>
+            Grayscale.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.RGBA">
+            <summary>
+            RGBA.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.BGRA">
+            <summary>
+            BGRA.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.ABGR">
+            <summary>
+            ABGR.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.ARGB">
+            <summary>
+            ARGB.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.PixelFormat.CMYK">
+            <summary>
+            CMYK.
+            </summary>
+        </member>
+        <member name="T:LightBuzz.Jpeg.Subsampling">
+            <summary>
+            The chroma subsampling.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Subsampling.Samp444">
+            <summary>
+            4:4:4 scheme.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Subsampling.Samp422">
+            <summary>
+            4:2:2 scheme.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Subsampling.Samp420">
+            <summary>
+            4:2:0 scheme.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Subsampling.SampGray">
+            <summary>
+            Grayscale scheme.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Subsampling.Samp440">
+            <summary>
+            4:4:0 scheme.
+            </summary>
+        </member>
+        <member name="F:LightBuzz.Jpeg.Subsampling.Max">
+            <summary>
+            Maximum subsampling.
+            </summary>
+        </member>
+    </members>
+</doc>

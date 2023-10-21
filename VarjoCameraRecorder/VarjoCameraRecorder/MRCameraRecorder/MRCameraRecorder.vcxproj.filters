@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\CameraManager.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\D3D11MultiLayerView.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\D3D11Renderer.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\D3D11Shaders.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\DataStreamer.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\GfxContext.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\Globals.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\MRScene.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\MultiLayerView.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\Renderer.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\Scene.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\SyncView.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\UI.cpp">
+      <Filter>includes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\AppView.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\AppLogic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\AppLogic.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\AppView.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\AppState.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\CameraManager.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\D3D11MultiLayerView.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\D3D11Renderer.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\D3D11Shaders.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\DataStreamer.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\ExampleShaders.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\GfxContext.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\Globals.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\src\MRScene.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\MultiLayerView.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\Renderer.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\Scene.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\SyncView.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\Common\UI.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e80eab9f-b52f-4c5b-ac7e-e83dcf4ebd12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes">
+      <UniqueIdentifier>{ac70ff9b-14a1-45ad-85c1-5457a6958735}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\apl-vr\Desktop\varjo-sdk\examples\MRExample\CMakeLists.txt">
+      <Filter>includes</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
