@@ -1,7 +1,4 @@
 # RealityReplay
-
-GitHub repo for 
-
 This repository contains the source code for our paper: 
 
 [**RealityReplay: Detecting and Replaying Temporal Changes In Situ using Mixed Reality**](https://augmented-perception.org/publications/2023-realityreplay.html)<br>
